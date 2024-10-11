@@ -5,7 +5,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint3.Task0.V20.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double sumSeries = 1;
             int i;
             for( i = startValue; i <= stopValue; i++)
             {
