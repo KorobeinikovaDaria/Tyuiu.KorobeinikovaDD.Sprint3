@@ -11,7 +11,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint3.Task0.V20.Lib
             {
                 sumSeries = sumSeries * (((Math.Cos(value) + (Math.Pow(i, 3) / Math.Pow(8, 3)))));
             }
-            return sumSeries;
+            return Math.Round(sumSeries, 3);
         }
     }
 }
