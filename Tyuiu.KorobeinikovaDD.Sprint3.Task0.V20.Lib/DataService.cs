@@ -9,9 +9,9 @@ namespace Tyuiu.KorobeinikovaDD.Sprint3.Task0.V20.Lib
             int i;
             for( i = startValue; i <= stopValue; i++)
             {
-                sumSeries = sumSeries * ((Math.Cos(value) + Math.Pow((i / 8), 3)));
+                sumSeries = sumSeries * (((Math.Cos(value) + (Math.Pow(i, 3) / Math.Pow(8, 3)))));
             }
-            return Math.Round(sumSeries, 3);
+            return sumSeries;
         }
     }
 }
