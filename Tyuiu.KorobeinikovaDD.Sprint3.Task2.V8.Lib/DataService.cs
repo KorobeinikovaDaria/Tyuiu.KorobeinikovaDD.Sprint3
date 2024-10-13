@@ -9,7 +9,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint3.Task2.V8.Lib
             int i = startValue;
             do
             {
-                sumSeries = sumSeries * (1/(Math.Pow(Math.Cos(5), 2) + 1));
+                sumSeries = sumSeries * (1/(Math.Pow((Math.Cos(5)+1), 2)));
                 i++;
             } while (i <= stopValue);
             return Math.Round(sumSeries, 3);
