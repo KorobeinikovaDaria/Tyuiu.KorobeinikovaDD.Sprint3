@@ -1,32 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Tyuiu.KorobeinikovaDD.Sprint3.Task1.V26.Lib;
+using Tyuiu.KorobeinikovaDD.Sprint3.Task2.V8.Lib;
 DataService ds = new DataService();
 
 Console.Title = "Спринт #2 | Выполнила: Коробейникова Д.Д. | ПКТб-24-1";
 Console.WriteLine("*******************************************************************************");
-Console.WriteLine("* Тема: Оператор цикла while                                                  *");
-Console.WriteLine("* Задание #1                                                                  *");
-Console.WriteLine("* Вариант #26                                                                 *");
+Console.WriteLine("* Тема: Оператор цикла do-while                                               *");
+Console.WriteLine("* Задание #2                                                                  *");
+Console.WriteLine("* Вариант #8                                                                  *");
 Console.WriteLine("* Выполнила: Коробейникова Дарья Денисовна | ПКТб-24-1                        *");
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                    *");
-Console.WriteLine("* Написать программу на С#, используя цикл while, которая вычисляет сумму     *");
-Console.WriteLine("* ряда по формуле                                                             *");
+Console.WriteLine("* Написать программу на С#, используя цикл do-while, которая вычисляет        *");
+Console.WriteLine("* произведение ряда по формуле                                                *");
 Console.WriteLine("*                                                                             *");
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                            *");
 Console.WriteLine("*******************************************************************************");
 
-int value = 5;
 int startValue = 1;
-int stopValue = 8;
+int stopValue = 15;
 
-Console.WriteLine("Переменная n = " + value);
 Console.WriteLine("Старт шага = " + startValue);
 Console.WriteLine("Конец шага = " + stopValue);
 
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                                  *");
 Console.WriteLine("*******************************************************************************");
-Console.WriteLine("Cумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
+Console.WriteLine("Cумма ряда = " + ds.GetMultiplySeries(startValue, stopValue));
 Console.ReadKey();
+
