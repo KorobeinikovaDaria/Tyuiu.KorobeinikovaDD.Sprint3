@@ -1,31 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Tyuiu.KorobeinikovaDD.Sprint3.Task2.V8.Lib;
+using Tyuiu.KorobeinikovaDD.Sprint3.Task3.V20.Lib;
 DataService ds = new DataService();
 
 Console.Title = "Спринт #3 | Выполнила: Коробейникова Д.Д. | ПКТб-24-1";
 Console.WriteLine("*******************************************************************************");
-Console.WriteLine("* Тема: Оператор цикла do-while                                               *");
-Console.WriteLine("* Задание #2                                                                  *");
-Console.WriteLine("* Вариант #8                                                                  *");
+Console.WriteLine("* Тема: Оператор цикла foreach                                                *");
+Console.WriteLine("* Задание #3                                                                  *");
+Console.WriteLine("* Вариант #20                                                                 *");
 Console.WriteLine("* Выполнила: Коробейникова Дарья Денисовна | ПКТб-24-1                        *");
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                    *");
-Console.WriteLine("* Написать программу на С#, используя цикл do-while, которая вычисляет        *");
-Console.WriteLine("* произведение ряда по формуле                                                *");
+Console.WriteLine("* Используя цикл foreach, подсчитать колличество букв 'f' в строке:           *");
+Console.WriteLine("* gfft htf f opf                                                              *");
 Console.WriteLine("*                                                                             *");
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                            *");
 Console.WriteLine("*******************************************************************************");
 
-int startValue = 1;
-int stopValue = 15;
-
-Console.WriteLine("Старт шага = " + startValue);
-Console.WriteLine("Конец шага = " + stopValue);
+string str = "gfft htf f opf";
+char c = 'f';
+double res = ds.GetCharCount(str, c);
 
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                                  *");
 Console.WriteLine("*******************************************************************************");
-Console.WriteLine("Cумма ряда = " + ds.GetMultiplySeries(startValue, stopValue));
+Console.WriteLine("Колличество букв 'f' = " + res);
 Console.ReadKey();
-

@@ -2,7 +2,7 @@
 using Tyuiu.KorobeinikovaDD.Sprint3.Task1.V26.Lib;
 DataService ds = new DataService();
 
-Console.Title = "Спринт #2 | Выполнила: Коробейникова Д.Д. | ПКТб-24-1";
+Console.Title = "Спринт #3 | Выполнила: Коробейникова Д.Д. | ПКТб-24-1";
 Console.WriteLine("*******************************************************************************");
 Console.WriteLine("* Тема: Оператор цикла while                                                  *");
 Console.WriteLine("* Задание #1                                                                  *");
